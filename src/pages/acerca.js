@@ -1,11 +1,10 @@
 import React from "react"
 import Layout from '../components/layout.js'
-import ProfileImg from '../components/profileimg.js'
 
 const IndexPage = () => (
   <>
     <Layout>
-      <ProfileImg/>
+      <h1>Acerca</h1>
     </Layout>
   </>
   
