@@ -1,13 +1,13 @@
 import React from 'react';
+import {graphql, useStaticQuery} from 'gatsby'
+import BackgroundImagen from 'gatsby-background-image';
 
-import {graphql, useStaticQuery} from 'gatsby';
-import Image from 'gatsby-image'
 
-const ProfileImg = () => {
+const ImagenFondo = (props) => {
 
-    const query = useStaticQuery(graphql`
+    const image = useStaticQuery(graphql`
     query {
-        file(relativePath: { eq: "fede.png" }) {
+        file(relativePath: { eq: "fondo.jpg" }) {
           childImageSharp {
             fluid {
               srcSetWebp
@@ -15,15 +15,17 @@ const ProfileImg = () => {
             }
           }
         }
-    `)
+    `);
 
-    console.log(query);
     return ( 
-        <>
-            <h1>Componente imagen</h1>
-            <Image fluid={query.file.childImageSharp.fluid.srcSetWebp} />
-        </>
+        <BackgroundImagen 
+            Tag={'section'} 
+            fluid={image.file.childImageSharp.fluid} style={{heigth: 700}}>
+                <div style={{height: '91vh'}}>
+                    {props.children}
+                </div>
+        </BackgroundImagen>
      );
 }
  
-export default ProfileImg;
+export default ImagenFondo;
