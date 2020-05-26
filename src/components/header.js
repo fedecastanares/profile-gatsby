@@ -1,21 +1,26 @@
 import React from 'react';
 import Navegacion from './nav.js';
 
-import {Typography, Container, Grid} from '@material-ui/core'
+import {Typography, Container, Grid, Toolbar, AppBar} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
     root: {
       backgroundColor: '#24292e',
-      padding: '2vh 0 2vh 0'
+      padding: '2vh 0 2vh 0',
+      [theme.breakpoints.up('sm')]: {
+        padding: '1vh 0 1vh 0',
+      },
     },
     header: {
         color: 'white',
-        textAlign: 'center',
+        textAlign: 'start',
         paddingTop: '1vh',
+        fontSize: '1.2rem',
+        fontWeight: 400,
         [theme.breakpoints.up('sm')]: {
             paddingTop: 0,
-            textAlign: 'start'
+            fontSize: '1.6rem',
           },
     }
    }))
@@ -24,25 +29,26 @@ const useStyles = makeStyles(theme => ({
 const Header = () => {
     const classes = useStyles();
     return ( 
-        <div className={classes.root}>
-            <Container>
-                <Grid container justify='space-between' alignContent='center' alignItems='center'>
-                    <Grid item xs={12} lg={8}>
-                    <Typography 
-                        className={classes.header}
-                        variant="h5" 
-                        gutterBottom>
-                        Federico Castañares
-                    </Typography>
-                    </Grid>
-                    <Grid item xs={12} lg={4}>
-                        <Navegacion/>
-                    </Grid>
-                </Grid>
-            </Container>
-            
-        </div>
-     );
+            <AppBar position="sticky" color='inherit' className={classes.root}>
+                <Toolbar>
+                        <Container>
+                            <Grid container justify='space-between' alignContent='center' alignItems='center'>
+                                <Grid item xs={8} lg={8}>
+                                <Typography 
+                                    className={classes.header}
+                                    variant="h5" 
+                                    gutterBottom>
+                                    Federico Castañares
+                                </Typography>
+                                </Grid>
+                                <Grid item xs={4} lg={4}>
+                                    <Navegacion/>
+                                </Grid>
+                            </Grid>
+                        </Container>
+                </Toolbar>
+            </AppBar>
+            );
 }
  
 export default Header;

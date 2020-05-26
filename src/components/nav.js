@@ -6,17 +6,22 @@ const useStyles = makeStyles(theme => ({
     nav: {
         display: 'flex',
         justifyContent: 'center',
-        padding: '2vh 0 2vh 0',
+        padding: 0,
         [theme.breakpoints.up('sm')]: {
             padding: '1vh',
           },
     }, navitem: {
         color: 'white',
-        fontSize: '1.6rem',
+        fontSize: '1rem',
         fontWeight: 700,
         lineHeight: '1rem',
         textDecoration: 'none',
-        padding: '1rem',
+        padding: '0.4rem',
+        marginRight: '0.6rem',
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '1.6rem',
+            padding: '1rem',
+          },
     },
     navitemActive: {
         color: '#e17100',
