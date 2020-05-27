@@ -1,20 +1,20 @@
 import React from "react"
 import Layout from '../components/layout.js'
-import ProfileImg from '../components/profileimg.js'
+import BackgroundImg from '../components/backgroundimg.js'
 import {Typography} from '@material-ui/core'
 
 
 const IndexPage = () =>  (
   <>
     <Layout>
-      <ProfileImg>
+      <BackgroundImg>
         <Typography 
           style={{color: 'white'}}
           variant="h5" 
           gutterBottom>
           Contenido
         </Typography>
-      </ProfileImg>
+      </BackgroundImg>
     </Layout>
   </>
   

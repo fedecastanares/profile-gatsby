@@ -31,21 +31,21 @@ const Header = () => {
     return ( 
             <AppBar position="sticky" color='inherit' className={classes.root}>
                 <Toolbar>
-                        <Container>
-                            <Grid container justify='space-between' alignContent='center' alignItems='center'>
-                                <Grid item xs={8} lg={8}>
-                                <Typography 
-                                    className={classes.header}
-                                    variant="h5" 
-                                    gutterBottom>
-                                    Federico Castañares
-                                </Typography>
-                                </Grid>
-                                <Grid item xs={4} lg={4}>
-                                    <Navegacion/>
-                                </Grid>
+                    <Container>
+                        <Grid container justify='space-between' alignContent='center' alignItems='center'>
+                            <Grid item xs={8} lg={8}>
+                            <Typography 
+                                className={classes.header}
+                                variant="h5" 
+                                gutterBottom>
+                                Federico Castañares
+                            </Typography>
                             </Grid>
-                        </Container>
+                            <Grid item xs={4} lg={4}>
+                                <Navegacion/>
+                            </Grid>
+                        </Grid>
+                    </Container>
                 </Toolbar>
             </AppBar>
             );
