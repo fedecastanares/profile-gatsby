@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql, useStaticQuery} from 'gatsby'
+import {graphql, useStaticQuery} from 'gatsby';
 import BackgroundImagen from 'gatsby-background-image';
 
 
@@ -20,8 +20,8 @@ const ImagenFondo = (props) => {
     return ( 
         <BackgroundImagen 
             Tag={'section'} 
-            fluid={image.file.childImageSharp.fluid} style={{heigth: 700}}>
-                <div style={{height: '91vh'}}>
+            fluid={image.file.childImageSharp.fluid}>
+                <div style={{height: '45vh'}}>
                     {props.children}
                 </div>
         </BackgroundImagen>

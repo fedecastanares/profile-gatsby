@@ -1,12 +1,12 @@
 import React from 'react';
-import Navegacion from './nav.js';
+import Navegacion from './navegacion.js';
 
 import {Typography, Container, Grid, Toolbar, AppBar} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
     root: {
-      backgroundColor: '#24292e',
+      backgroundColor: theme.palette.secondary.main,
       padding: '2vh 0 2vh 0',
       [theme.breakpoints.up('sm')]: {
         padding: '1vh 0 1vh 0',

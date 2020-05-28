@@ -24,13 +24,14 @@ const useStyles = makeStyles(theme => ({
           },
     },
     navitemActive: {
-        color: '#e17100',
-        borderBottom: '2px solid #e17100'
+        color: theme.palette.primary.main,
+        borderBottom: '2px solid'
     }
 }))
 
 const Navegacion = () => {
     const classes = useStyles();
+
     return ( 
         <nav className={classes.nav}>
             <Link className={classes.navitem} activeClassName={classes.navitemActive} to={'/'}>Inicio</Link>
