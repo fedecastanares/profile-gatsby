@@ -31,5 +31,11 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-material-ui`,
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `d504d298af3b3a6ca98fe1400c0ac6`,
+      },
+    },
   ],
 }
