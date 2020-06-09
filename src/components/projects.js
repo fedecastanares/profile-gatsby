@@ -59,8 +59,8 @@ const ProjectTemplate = ({data: {allDatoCmsPortfolio : { nodes }}}) => {
                     <Typography className={classes.tittle} variant='h3'>{titulo}</Typography>
                 </Grid>
             </Grid>
-            <Container style={{paddingTop: '5vh'}}>
-                <Grid container justify='space-around' alignItems='center' alignContent='center' spacing={2}>
+            <Container >
+                <Grid container justify='space-around' alignItems='center' alignContent='center' spacing={2} style={{paddingTop: '5vh'}}>
                     <Grid item xs={12} lg={6}>
                         <Img
                         fluid={imagen.fluid}
