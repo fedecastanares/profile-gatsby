@@ -43,9 +43,6 @@ const WhoAmi = () => {
               Desarrollador FullStack
               </Typography>
               <Typography className={classes.typography} variant="h5" gutterBottom>
-              Edad: 25 años
-              </Typography>
-              <Typography className={classes.typography} variant="h5" gutterBottom>
               Email: federico.castanares@gmail.com
               </Typography>
             </Grid>
