@@ -2,6 +2,7 @@ import React from 'react';
 import {graphql, useStaticQuery} from 'gatsby';
 import BackgroundImagen from 'gatsby-background-image';
 
+
 // ...GatsbyImageSharpFluid_withWebp_tracedSVG
 const ImagenFondo = (props) => {
 
