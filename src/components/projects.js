@@ -60,7 +60,7 @@ const ProjectTemplate = ({data: {allDatoCmsPortfolio : { nodes }}}) => {
                         <ArrowBackIcon color='primary' className={classes.tittle} />
                     </Link>
                 </Grid>
-                <Grid item xs={11} >
+                <Grid item xs={11} style={{paddingLeft: '2vh'}}>
                     <Typography className={classes.tittle} variant='h3'>{titulo}</Typography>
                 </Grid>
             </Grid>
