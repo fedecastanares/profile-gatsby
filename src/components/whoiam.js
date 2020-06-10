@@ -34,7 +34,7 @@ const WhoAmi = () => {
     return ( 
         <>
         <Container className={classes.root}>
-          <Grid container justify={window.innerWidth > 768 ? 'space-evenly' : 'center'} alignContent='center' alignItems='center' style={{height: '100%'}}>
+          <Grid container justify='space-evenly' alignContent='center' alignItems='center' style={{height: '100%'}}>
             <Grid item style={{paddingBottom: '15vh'}}>
               <Typography className={classes.name} color='primary' variant="h3" gutterBottom>
               Federico Castañares
