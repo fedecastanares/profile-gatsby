@@ -1,5 +1,6 @@
 import React from 'react';
 import Navegacion from './navegacion.js';
+import {Link} from 'gatsby'
 
 import {Typography, Container, Grid, Toolbar, AppBar} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
@@ -34,12 +35,14 @@ const Header = () => {
                     <Container>
                         <Grid container justify='space-between' alignContent='center' alignItems='center'>
                             <Grid item xs={8} lg={8}>
-                            <Typography 
-                                className={classes.header}
-                                variant="h5" 
-                                gutterBottom>
-                                Federico Castañares
-                            </Typography>
+                                <Link to='/' style={{textDecoration: 'none',color: 'inherit'}}>
+                                    <Typography 
+                                    className={classes.header}
+                                    variant="h5" 
+                                    gutterBottom>
+                                    Federico Castañares
+                                    </Typography>
+                                </Link>
                             </Grid>
                             <Grid item xs={4} lg={4}>
                                 <Navegacion/>

@@ -55,12 +55,12 @@ const ProjectTemplate = ({data: {allDatoCmsPortfolio : { nodes }}}) => {
         <Layout>
             <div className={classes.root}>
             <Grid container justify='flex-start' alignItems='flex-end' alignContent='flex-end' style={{padding: '3vh'}} >
-                <Grid item>
+                <Grid item xs={1}>
                     <Link to='/portfolio' style={{textDecoration: 'none',color: 'inherit'}}>
                         <ArrowBackIcon color='primary' className={classes.tittle} />
                     </Link>
                 </Grid>
-                <Grid item style={{paddingLeft: '2vh'}}>
+                <Grid item xs={11} >
                     <Typography className={classes.tittle} variant='h3'>{titulo}</Typography>
                 </Grid>
             </Grid>
