@@ -26,6 +26,7 @@ const Layout = (props) => {
        <Helmet>
           <title>{title}</title>
           <meta name="description" content={description} />
+          <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Yeseva+One&display=swap" rel="stylesheet"></link>
         </Helmet>
       <ThemeProvider theme={theme}>
         <Header/>

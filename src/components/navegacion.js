@@ -13,11 +13,12 @@ const useStyles = makeStyles(theme => ({
     }, navitem: {
         color: 'white',
         fontSize: '1rem',
-        fontWeight: 700,
+        fontWeight: 400,
         lineHeight: '1rem',
         textDecoration: 'none',
         padding: '0.4rem',
         marginRight: '0.6rem',
+        fontFamily: 'Yeseva One, cursive',
         [theme.breakpoints.up('sm')]: {
             fontSize: '1.6rem',
             padding: '1rem',
