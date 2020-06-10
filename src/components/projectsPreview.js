@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
     root: { 
         backgroundColor: theme.palette.secondary.main,
-        minHeight: '92vh',
+        minHeight: '95vh',
         color: 'white'
     },
 }));
@@ -39,7 +39,7 @@ const ProjectsPreview = () => {
         <>  
         <div className={classes.root}>
             <Container maxWidth='lg'>
-                <Grid container justify='space-evenly' alignContent='flex-end' alignItems='flex-end' spacing={2} >
+                <Grid container justify='space-evenly' alignContent='flex-end' alignItems='flex-end' spacing={8} style={{paddingTop: '5vh'}}>
                     {projects.allDatoCmsPortfolio.nodes.map(project => {
                             return(
                                 <Grid item xs={12} lg={4} style={{paddingTop: '3vh'}} key={project.titulo}>
