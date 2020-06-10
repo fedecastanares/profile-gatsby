@@ -40,7 +40,7 @@ const ProjectsPreview = () => {
         <div className={classes.root}>
             <Container maxWidth='lg'>
                 <Grid container justify='space-evenly' alignContent='flex-end' alignItems='flex-end' spacing={2} >
-                    {projects.allDatoCmsPortfolio.nodes.reverse().map(project => {
+                    {projects.allDatoCmsPortfolio.nodes.map(project => {
                             return(
                                 <Grid item xs={12} lg={4} style={{paddingTop: '3vh'}} key={project.titulo}>
                                   <Link to={project.slug} style={{
