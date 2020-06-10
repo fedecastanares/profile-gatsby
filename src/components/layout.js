@@ -2,8 +2,12 @@ import React from 'react';
 import Header from './header.js';
 import {Helmet} from 'react-helmet';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import useSeo from '../hooks/use-seo.js';
 
 const Layout = (props) => {
+
+  const SEO = useSeo();
+  const {fallbackSeo: {description, title}} = SEO
 
   const theme = createMuiTheme({
     palette: {
@@ -20,8 +24,8 @@ const Layout = (props) => {
   return ( 
     <>
        <Helmet>
-          <title>Federico Castañares</title>
-          <meta name="description" content={'Sitio web de Federico Castañares, desarrollador web FullStack, MERN JAMStack'} />
+          <title>{title}</title>
+          <meta name="description" content={description} />
         </Helmet>
       <ThemeProvider theme={theme}>
         <Header/>
