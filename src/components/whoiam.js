@@ -23,6 +23,12 @@ const useStyles = makeStyles(theme => ({
             marginLeft: 0,
             fontSize: '2.6rem',
           },
+    },
+    imagen: {
+      display: 'none',
+      [theme.breakpoints.up('md')]: {
+        display: 'block'
+      },
     }
     
 
@@ -47,7 +53,9 @@ const WhoAmi = () => {
               </Typography>
             </Grid>
             <Grid item>
-              {window.innerWidth > 768 ? <ProfileImg size={{height: '45vh', width: '30vh'}}/> : null}
+              <div className={classes.imagen}> 
+                <ProfileImg size={{height: '45vh', width: '30vh'}}/>
+              </div>
             </Grid>
           </Grid>
         </Container>
