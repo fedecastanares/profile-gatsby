@@ -19,6 +19,7 @@ const useStyles = makeStyles(theme => ({
         paddingTop: '1vh',
         fontSize: '1.2rem',
         fontFamily: 'Oleo Script, cursive',
+        fontWeight: '200',
         [theme.breakpoints.up('sm')]: {
             paddingTop: 0,
             fontSize: '1.6rem',

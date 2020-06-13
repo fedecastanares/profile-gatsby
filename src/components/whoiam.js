@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {Typography, Grid, Container} from '@material-ui/core'
+import {Link} from 'gatsby';
+import {Typography, Grid, Container, Button} from '@material-ui/core'
 import ProfileImg from './profileimg.js'
 
 
@@ -9,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     typography: {
         color: 'white',
         fontSize: '1rem',
-        marginLeft: '5vh',
+        marginLeft: '5vw',
         [theme.breakpoints.up('sm')]: {
             padding: '1vh 0 1vh 0',
             fontSize: '1.6rem',
@@ -17,7 +18,7 @@ const useStyles = makeStyles(theme => ({
           },
     },
     name: {
-        marginLeft: '5vh',
+        marginLeft: '5vw',
         fontSize: '2rem',
         [theme.breakpoints.up('sm')]: {
             marginLeft: 0,
@@ -29,6 +30,9 @@ const useStyles = makeStyles(theme => ({
       [theme.breakpoints.up('md')]: {
         display: 'block'
       },
+    }, 
+    button: {
+      fontWeight: 700,
     }
     
 
@@ -51,6 +55,15 @@ const WhoAmi = () => {
               <Typography className={classes.typography} variant="h5" gutterBottom>
               Email: federico.castanares@gmail.com
               </Typography>
+              <Grid container justify='flex-end' style={{marginTop: '2vh'}}>
+                <Grid item>
+                <Link to={'/portfolio'} style={{textDecoration: 'none',color: 'primary'}}>
+                  <Button  classname={classes.button} variant="outlined"  color='primary' >
+                    Portfolio
+                  </Button>
+                </Link>
+                </Grid>
+              </Grid>
             </Grid>
             <Grid item>
               <div className={classes.imagen}> 
