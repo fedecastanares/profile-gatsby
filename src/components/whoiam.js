@@ -10,18 +10,18 @@ const useStyles = makeStyles(theme => ({
     typography: {
         color: 'white',
         fontSize: '1rem',
-        marginLeft: '5vw',
+        paddingLeft: '5vw',
         [theme.breakpoints.up('sm')]: {
             padding: '1vh 0 1vh 0',
             fontSize: '1.6rem',
-            marginLeft: 0,
+            paddingLeft: 0,
           },
     },
     name: {
-        marginLeft: '5vw',
+        paddingLeft: '5vw',
         fontSize: '2rem',
         [theme.breakpoints.up('sm')]: {
-            marginLeft: 0,
+            paddingLeft: 0,
             fontSize: '2.6rem',
           },
     },
@@ -55,7 +55,7 @@ const WhoAmi = () => {
               <Typography className={classes.typography} variant="h5" gutterBottom>
               Email: federico.castanares@gmail.com
               </Typography>
-              <Grid container justify='flex-end' style={{marginTop: '2vh'}}>
+              <Grid container justify='flex-end' style={{paddingTop: '2vh'}}>
                 <Grid item>
                 <Link to={'/portfolio'} style={{textDecoration: 'none',color: 'primary'}}>
                   <Button  classname={classes.button} variant="outlined"  color='primary' >
