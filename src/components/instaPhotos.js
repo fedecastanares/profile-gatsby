@@ -26,6 +26,10 @@ const InstaPhotos = () => {
                   }
                 }
               }
+              dimensions {
+                height
+                width
+              }
             }
           }
         }
@@ -39,10 +43,15 @@ const InstaPhotos = () => {
     {image.allInstaNode.edges.map(imagen => {
             if (imagen.node.mediaType === "GraphImage") {
                     return(
-                        <Grid item xs={12} lg={4}>
+                        <Grid item key={imagen.node.id} xs={12} lg={4}>
                             <Img fluid={imagen.node.localFile.childImageSharp.fluid} alt="imagen de instagram" style={{heigth: 'auto', witdh: '100%'}}/> 
                         </Grid>
                     )
+                } else {
+                    return (
+                    <Grid item key={imagen.node.id} xs={12} lg={4}>
+                         
+                    </Grid>)
                 }
             }    
         )}
