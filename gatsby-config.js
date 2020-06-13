@@ -42,7 +42,9 @@ module.exports = {
       options: {
         username: `fedecastanares`,
         instagram_id: 476999990,
-        maxPosts: 1000,
+        
+        paginate: 20,
+        maxPosts: 30,
       },
     },
   ],

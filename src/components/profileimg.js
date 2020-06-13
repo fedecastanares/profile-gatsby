@@ -9,7 +9,8 @@ const ProfileImg = props => {
     query {
         file(relativePath: { eq: "fede.png" }) {
           childImageSharp {
-            fluid {
+            fluid
+            {
                 ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
             }

@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'start',
         paddingTop: '1vh',
         fontSize: '1.2rem',
-        fontFamily: 'Oleo Script, cursive',
+        fontFamily: 'Poppins, sans-serif',
         fontWeight: '200',
         [theme.breakpoints.up('sm')]: {
             paddingTop: 0,
