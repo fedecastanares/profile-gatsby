@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#24292e`,
         theme_color: `#24292e`,
         display: `minimal-ui`,
-        //icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/fede.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -35,6 +35,12 @@ module.exports = {
       resolve: `gatsby-source-datocms`,
       options: {
         apiToken: `d504d298af3b3a6ca98fe1400c0ac6`,
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `fedecastanares`,
       },
     },
   ],

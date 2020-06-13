@@ -3,7 +3,6 @@ import {graphql, useStaticQuery} from 'gatsby';
 import BackgroundImagen from 'gatsby-background-image';
 
 
-// ...GatsbyImageSharpFluid_withWebp_tracedSVG
 const ImagenFondo = (props) => {
 
     const image = useStaticQuery(graphql`
@@ -11,7 +10,7 @@ const ImagenFondo = (props) => {
         file(relativePath: { eq: "fondo.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920)  {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
             }
           }

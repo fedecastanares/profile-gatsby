@@ -58,7 +58,7 @@ const WhoAmi = () => {
               <Grid container justify='flex-end' style={{paddingTop: '2vh'}}>
                 <Grid item>
                 <Link to={'/portfolio'} style={{textDecoration: 'none',color: 'primary'}}>
-                  <Button  classname={classes.button} variant="outlined"  color='primary' >
+                  <Button  className={classes.button} variant="outlined"  color='primary' >
                     Portfolio
                   </Button>
                 </Link>
