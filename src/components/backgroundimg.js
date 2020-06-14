@@ -9,7 +9,7 @@ const ImagenFondo = (props) => {
     query {
         file(relativePath: { eq: "fondo.jpg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920)  {
+            fluid(quality: 100)  {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
             }
@@ -22,7 +22,7 @@ const ImagenFondo = (props) => {
             Tag={'section'} 
             fluid={image.file.childImageSharp.fluid}
             style={{backgroundColor: '#2b2b2b'}}>
-                <div style={{height: '45vh'}}>
+                <div style={{height: '82vh'}}>
                     {props.children}
                 </div>
         </BackgroundImagen>
