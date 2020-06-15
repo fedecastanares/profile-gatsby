@@ -8,7 +8,7 @@ import {Typography, Grid, Container, Button} from '@material-ui/core'
 const useStyles = makeStyles(theme => ({
     root: { height: '100%', 
             paddingTop: '20vh',
-            [theme.breakpoints.down('lg')]: { 
+            [theme.breakpoints.down('md')]: { 
               display: 'none'
             }
           },

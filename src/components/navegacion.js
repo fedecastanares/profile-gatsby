@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     }, navitem: {
         color: 'white',
         fontSize: '1rem',
-        fontWeight: 200,
+        fontWeight: 500,
         lineHeight: '1rem',
         textDecoration: 'none',
         padding: '0.4rem',
