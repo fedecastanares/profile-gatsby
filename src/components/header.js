@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
         color: 'white',
         textAlign: 'start',
         paddingTop: '1vh',
-        fontSize: '1.2rem',
+        fontSize: '1rem',
         fontFamily: 'Poppins, sans-serif',
         fontWeight: '200',
         [theme.breakpoints.up('sm')]: {
