@@ -18,6 +18,7 @@ const useStyles = makeStyles(theme => ({
         textDecoration: 'none',
         padding: '0.4rem',
         marginRight: '0.6rem',
+        fontFamily: 'Helvetica',
         [theme.breakpoints.up('sm')]: {
             fontSize: '1.2rem',
             padding: '1rem',
