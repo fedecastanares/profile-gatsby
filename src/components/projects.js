@@ -54,16 +54,18 @@ const ProjectTemplate = ({data: {allDatoCmsPortfolio : { nodes }}}) => {
         <>
         <Layout>
             <div className={classes.root}>
-            <Grid container justify='flex-start' alignItems='flex-end' alignContent='flex-end' style={{padding: '3vh'}} >
-                <Grid item xs={1}>
-                    <Link to='/portfolio' style={{textDecoration: 'none',color: 'inherit'}}>
-                        <ArrowBackIcon color='primary' className={classes.tittle} />
-                    </Link>
-                </Grid>
-                <Grid item xs={11} style={{paddingLeft: '2vh'}}>
-                    <Typography className={classes.tittle} variant='h3'>{titulo}</Typography>
-                </Grid>
-            </Grid>
+                <Container>
+                    <Grid container justify='flex-start' alignItems='flex-end' alignContent='flex-end' style={{padding: '3vh'}} >
+                        <Grid item xs={1}>
+                            <Link to='/portfolio' style={{textDecoration: 'none',color: 'inherit'}}>
+                                <ArrowBackIcon color='primary' className={classes.tittle} />
+                            </Link>
+                        </Grid>
+                        <Grid item xs={11} style={{paddingLeft: '2vh'}}>
+                            <Typography className={classes.tittle} variant='h3'>{titulo}</Typography>
+                        </Grid>
+                    </Grid>
+                </Container>
             <Container >
                 <Grid container justify='space-around' alignItems='center' alignContent='center' spacing={2} >
                     <Grid item xs={12} lg={6}>
