@@ -3,15 +3,7 @@ exports.createPages = async ({ actions, graphql, reporter}) => {
     query {
         allDatoCmsPortfolio {
           nodes{
-            titulo
-            descripcion
-            enlace
             slug
-            imagen {
-              fluid {
-                srcSet
-              }
-            }
           }
         }
       
