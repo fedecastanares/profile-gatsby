@@ -81,10 +81,14 @@ const ProjectTemplate = ({data: {allDatoCmsPortfolio : { nodes }}}) => {
                         </Typography>
                         <Grid container spacing={2} style={{paddingTop: '2vh'}} justify='space-evenly'>
                             <Grid item xs={6}>
-                                <a href={repositorio} target="_blank" rel='noreferrer' style={{textDecoration: 'none',color: 'inherit'}}><Button color='primary' variant="outlined" fullWidth>Ver repo</Button></a>
+                                {repositorio ? 
+                                <a href={repositorio} target="_blank" rel='noreferrer' style={{textDecoration: 'none',color: 'inherit'}}><Button color='primary' variant="outlined" fullWidth>Ver repo</Button></a> :
+                                <Button color='primary' variant="outlined" fullWidth disabled>Ver repo</Button> }
                             </Grid>
                             <Grid item xs={6}>
-                                <a href={enlace} target="_blank" rel='noreferrer' style={{textDecoration: 'none',color: 'inherit'}}><Button color='primary' variant="contained" fullWidth>Ver app</Button></a>
+                                {enlace ? 
+                                <a href={enlace} target="_blank" rel='noreferrer' style={{textDecoration: 'none',color: 'inherit'}}><Button color='primary' variant="contained" fullWidth>Ver app</Button></a> : 
+                                <Button color='primary' variant="contained" fullWidth disabled>Ver app</Button>}
                             </Grid>
                         </Grid>
                     </Grid>
