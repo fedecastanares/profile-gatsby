@@ -1,3 +1,9 @@
+const dotenv = require('dotenv');
+
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config()
+}
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -34,17 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: `d504d298af3b3a6ca98fe1400c0ac6`,
-      },
-    },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `fedecastanares`,
-        instagram_id: 476999990,
-        
-        paginate: 20,
-        maxPosts: 30,
+        apiToken: process.env.DATOCMS_ACCESS_TOKEN,
       },
     },
   ],
