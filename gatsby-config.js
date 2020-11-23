@@ -1,8 +1,10 @@
 const dotenv = require('dotenv');
 
 if (process.env.NODE_ENV !== 'production') {
-  dotenv.config()
+  dotenv.config(process.env.API_KEY)
 }
+
+console.log()
 
 module.exports = {
   siteMetadata: {
@@ -25,7 +27,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `Fede Castañares`,
         start_url: `/`,
         background_color: `#24292e`,
         theme_color: `#24292e`,
@@ -40,7 +42,14 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: process.env.DATOCMS_ACCESS_TOKEN,
+        apiToken: "8d7123235900822bbd8b054409f670",
+        environment: `master`,
+        previewMode: false,
+        disableLiveReload: false,
+        apiUrl: 'https://site-api.datocms.com',
+        localeFallbacks: {
+          it: ['es'],
+        },
       },
     },
   ],

@@ -41,6 +41,7 @@ const Layout = (props) => {
           <title>{title}</title>
           <meta name="description" content={description} />
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500" rel="stylesheet"></link>
+          <meta name="google-site-verification" content="2ArncMcBZyBseyCTtqfa1R3WUalxipwq_aSsblGAXDk" />
         </Helmet>
       <ThemeProvider theme={theme}>
         <Header/>
