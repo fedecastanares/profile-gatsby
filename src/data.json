@@ -183,13 +183,13 @@
         "Scenario": "Fix clientes ecommerce feature",
         "Proyecto": "Farmashop",
         "Descripcion": "Fix clientes ecommerce feature",
-        "Tipo": "fix"
+        "Tipo": "Fix"
     },
     {
         "Scenario": "Fix mi cuenta feature",
         "Proyecto": "Farmashop",
         "Descripcion": "Cambios en la referencia a iteraciones, como posicionamiento, texto a buscar, seleccion de sucursal. Control de reintentos en la busqueda de divs",
-        "Tipo": "fix"
+        "Tipo": "Fix"
     },
     {
         "Scenario": "Iteracion en el mapa al guardar nueva direccion",

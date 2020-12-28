@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Grid, Typography, FormGroup, FormControlLabel, Checkbox, Button, Link } from '@material-ui/core';
+import { Grid, Typography, FormGroup, FormControlLabel, Checkbox, Button } from '@material-ui/core';
 
 
 const Filters = ({data, renderData, setRenderData}) => {
@@ -10,8 +10,12 @@ const Filters = ({data, renderData, setRenderData}) => {
         Fix: true,
       });
 
-      const scenarioFilter = (expectedValue) => {
-        var newData = ([...data.filter(scenario => scenario.Proyecto === expectedValue)])
+      const scenarioFilter = (expectedValue = 'all') => {
+          if ( expectedValue === 'all') {
+            var newData = data;
+          } else {
+            var newData = ([...data.filter(scenario => scenario.Proyecto === expectedValue)])
+          }
         if (!state.Creado){
             newData = [...newData.filter(value => value.Tipo !== "Creacion")];
         }
@@ -26,7 +30,7 @@ const Filters = ({data, renderData, setRenderData}) => {
 
       useEffect(() => {
           if (state.Alkosto && state.Farmashop) {
-            setRenderData(data)
+            scenarioFilter()
           } else if (state.Alkosto) {
             scenarioFilter("Alkosto")
           } else if (state.Farmashop) {
