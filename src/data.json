@@ -1,0 +1,272 @@
+[
+    {
+        "Scenario": "@PromotionCreate",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Fix de casos donde aplicaba o no la descripcion en POP y mercadeo",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "@VolumenDescuento",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Fix Tag @VolumenDescuento, se cambio el uso de lista pepe por lista...",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "@Volumen",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Cambio a metodo de pago DAVIVIENDA",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Metodo de pago Tarjeta alkosto",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Se condiciona el volver atrás al seleccionar Tarjeta Alkosto si es necesario",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Kasados combo Masiva",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Se crea Scenario para la prueba de Kasados combo Masiva desde carga CSV",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Step seleccion de proveedores",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Fix del step de selección de proveedores para asignar el porcentaje a cada uno por si tiene mas N proveedores",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Seleccion de financiacion",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Por cambio de version requeria ir atras al seleccionar financiacion, este fix prevee version nueva y anterior",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Metodo para remover caracteres UTF",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Este metodo permite remover caracteres UTF para luego ser comparado un string con otro string de la web",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Crear promo Kasados combo masiva para locales AKOMER con financiacion DAVIVIENDA",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Seleccion de multiples productos para promocion kasados combo",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Revisiones",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Cambios en Escaneo el articulo '829160902272' producto anterior no estaba en la BD",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Step Valido que guarde como ${string} en el campo promotion_type",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Validacion de campo promotion_type en sostenimiento total (descuento manual)",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Validacion de causales de sostenimineto total del (descuento manual) precio de venta de 5 productos",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Validacion de causales de sostenimineto total del (descuento manual) precio de venta de 5 productos",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Validacion de causales de sostenimineto total del (descuento manual) agregando productos luego de ingresar descuento",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Validacion de causales de sostenimineto total del (descuento manual) agregando productos luego de ingresar descuento",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Crear promo Hiper por producto con carga masiva para locales AKOMER",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Crear promo Hiper por producto con carga masiva para locales AKOMER",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Crear promo Especial por producto con carga masiva para locales AKOMER",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Crear promo Especial por producto con carga masiva para locales AKOMER",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Crear promo Especial por grupo con carga masiva para locales AKOMER",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Crear promo Especial por grupo con carga masiva para locales AKOMER",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Crear promo Evento por producto con carga masiva para locales AKOMER con financiacion davivienda",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Crear promo Evento por producto con carga masiva para locales AKOMER con financiacion davivienda",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Crear promo eventos por grupo con carga masiva para locales AKOMER con financiacion davivienda",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Crear promo eventos por grupo con carga masiva para locales AKOMER con financiacion davivienda",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Crear promo Volumen pague y lleve por producto con carga masiva para locales AKOMER con financiacion davivienda",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Crear promo Volumen pague y lleve por producto con carga masiva para locales AKOMER con financiacion davivienda",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Crear promo Volumen pague y lleve por producto con carga masiva para locales AKOMER con financiacion davivienda",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Crear promo Volumen pague y lleve por producto con carga masiva para locales AKOMER con financiacion davivienda",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Crear promo Volumen pague y lleve por producto con carga masiva para locales AKOMER con financiacion davivienda",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Crear promo Volumen pague y lleve por producto con carga masiva para locales AKOMER con financiacion davivienda",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Carga masiva segun tipo producto o grupo, volumen, kasados",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Descripcion",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "feature/kasadoKomboSinMercadeo",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Se quito la iteracion de mercadeo porque ahora se selecciona desde el CSV",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": " Scenario: Promocion de volumen de un producto, combinacion ( cada, valor fijo y diferente referencia) , con financiacion Tarjeta alkosto",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Creacion para scenario para promocion de volumen descuento para diferente referencia con valor fijo",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Scenario: Promocion de volumen de un producto, combinacion ( cada, descuento en pesos y diferente referencia) , con financiacion Tarjeta alkosto",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Creacion para scenario para promocion de volumen descuento para diferente referencia con descuento en pesos",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Scenario: Promocion de volumen de un producto, combinacion ( cada, porcentaje y diferente referencia) , con financiacion ",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Creacion para scenario para promocion de volumen descuento para diferente referencia con porcentaje",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": " Scenario: Promocion de volumen de un producto, combinacion ( cada, valor fijo y misma referencia) , con financiacion Tarjeta alkosto",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Creacion para scenario para promocion de volumen descuento para misma referencia con valor fijo",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Scenario: Promocion de volumen de un producto, combinacion ( cada, descuento en pesos y misma referencia) , con financiacion Tarjeta alkosto",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Creacion para scenario para promocion de volumen descuento para misma referencia con descuento en pesos",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Scenario: Promocion de volumen de un producto, combinacion ( cada, porcentaje y misma referencia) , con financiacion ",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Creacion para scenario para promocion de volumen descuento para misma referencia con porcentaje",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Runner farmashop",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Creacion de runner para farmashop con todos los features",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Fix clientes ecommerce feature",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Fix clientes ecommerce feature",
+        "Tipo": "fix"
+    },
+    {
+        "Scenario": "Fix mi cuenta feature",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Cambios en la referencia a iteraciones, como posicionamiento, texto a buscar, seleccion de sucursal. Control de reintentos en la busqueda de divs",
+        "Tipo": "fix"
+    },
+    {
+        "Scenario": "Iteracion en el mapa al guardar nueva direccion",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Iteracion en el mapa al guardar nueva direccion",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Verifacion guarda cambio en Base de datos",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Verifacion guarda cambio seteado en step en la BD",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": " Verificar que no aplique descuento Santander si no se usa tarjeta Santander.",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Validacion si se guarda descuento Santander en base de datos",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Pagos con diferentes tarjetas",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Permitir pagar con diferentes tarjetas ingresando la misma desde step (anteriormente solo chequeaba anda)",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Scenario: Crear 1 promo Especial Medio de Pago, para un producto de AKOMER con financiación Tarjeta Alkosto sin primera compra",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Posibilidad de seleccionar Tarjeta alkosto sin primera compra o con primera compra por defecto(como version anterior)",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Scenario: Crear 1 promo Especial Medio de Pago, para una categoria de AKOMER con financiación Tarjeta Alkosto",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Seleccion de multiples categorias para promociones con tarjeta alkosto",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Pago con Santander",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Posibilidad de pagar con Santander",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Scenario: Crear 1 promo Especial Medio de Pago, para dos categorias categoria de AKOMER con financiación Tarjeta Alkosto con pop 2A. DESCUENTO- Por Grupo",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Step creado para multiples productos y si posibilidad si requiere cabecera POP para el mismo",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Step Eliminar tarjeta asociada",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Elminar tarjeta asociada",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Creacion JDBC template para consultas a la BD",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Creacion JDBC template para consultas a la BD",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Valido genera puntos",
+        "Proyecto": "Farmashop",
+        "Descripcion": "Validacion de generacion de puntos",
+        "Tipo": "Fix"
+    },
+    {
+        "Scenario": "Scenario: Crear promo volumen con financiacion Tarjeta Alkosto y lista de Bines Tuya y Master",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Posibilidad de seleccion multiples productos para pago 1 y llevo 2 incluyendo cabecera Pop si es necesario",
+        "Tipo": "Creacion"
+    },
+    {
+        "Scenario": "Fix chequeo valor de la celda del informe",
+        "Proyecto": "Alkosto",
+        "Descripcion": "Fix para el chequeo de la celda del informe",
+        "Tipo": "Creacion"
+    }
+]
