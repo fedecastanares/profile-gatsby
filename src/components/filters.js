@@ -49,14 +49,14 @@ const Filters = ({data, renderData, setRenderData}) => {
     return ( 
         <>
         <Grid container justify='space-around' spacing={3} style={{paddingTop: 20, paddingBottom: 20}}>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
                 <a href="https://github.com/fedecastanares/profile-gatsby/blob/master/src/pages/geoworks.js" target="_blank" rel='noreferrer' style={{textDecoration: 'none',color: 'inherit'}}>
                     <Button variant="outlined" color="primary" fullWidth>
                         Ver repositorio de esta pagina
                     </Button>
                 </a>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={8}>
                 <Grid container alignItems='center' justify='flex-end' spacing={3}>
                     <Grid item>
                         <Typography variant='body1' component='p'>
