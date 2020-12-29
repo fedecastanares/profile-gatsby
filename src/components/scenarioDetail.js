@@ -37,13 +37,13 @@ const ScenarioDetail = ({data}) => {
                 id="panel1bh-header"
                 >
                 <Grid container justify='space-between'>
-                    <Grid item xs={10}>
+                    <Grid item xs={12} sm={10}>
                         <Typography variant='body1' component='p' className={classes.heading}>{scenario.Scenario}</Typography>
                     </Grid>
-                    <Grid item xs={1}>
+                    <Grid item xs={6} sm={1}>
                         <Typography variant='body1' component='p' className={classes.secondaryHeading}>{scenario.Proyecto}</Typography>
                     </Grid>
-                    <Grid item xs={1}>
+                    <Grid item xs={6} sm={1}>
                         <Chip 
                         size="small"
                         icon={scenario.Tipo === "Creacion" ? <CheckCircle /> : <Error />}
