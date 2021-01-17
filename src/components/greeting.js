@@ -27,8 +27,12 @@ const Greeting = () => {
         <div className={classes.root}>
             <Container className={classes.container} maxWidth='sm'>
                 <Typography variant="h4" gutterBottom>Hola!</Typography >
-                <Typography className={classes.about} variant="body1" gutterBottom>Soy desarrollador Web, desde tecnologias como jQuery hasta modernas como Gatsby (Este sitio esta hecho con Gatsby <span role="img" aria-label="Smiling Face with Sunglasses">😎</span>). </Typography>
-                <Typography className={classes.about} variant="body1" gutterBottom>Comence con el bachillerato tecnologico y luego fui hacia la ruta web, especializandome en interfaces con React. </Typography>
+                <Typography className={classes.about} variant="body1" gutterBottom>Soy desarrollador Web FullStack, desde tecnologias como jQuery hasta modernas como lo es MERN stack</Typography>
+                <Typography className={classes.about} variant="body1" gutterBottom>Actualmente estoy comenzando a ver React Native </Typography>
+                <br/>
+                <Typography className={classes.about} variant="body1" gutterBottom>Trabajo en Geocom Uruguay en el equipo de QA automation con Java como lenguaje y Selenium como herramienta</Typography>
+                <br/>
+                <Typography className={classes.about} variant="body1" gutterBottom>En mi tiempo libre juego al Basquet y videojuegos</Typography>
             </Container>
         </div>
         </>
