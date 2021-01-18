@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Fede Castañares`,
         short_name: `Fede Castañares`,
         start_url: `/`,
         background_color: `#24292e`,
