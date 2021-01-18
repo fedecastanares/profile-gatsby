@@ -43,7 +43,7 @@ const Contacto = () => {
             <form onSubmit={submitForm} action="https://formspree.io/f/mnqowqqg" method="POST" >
                 <Grid container justify='center' spacing={2}>
                     <Grid item xs={12}>
-                        <Typography variant='h5' gutterBottom style={{textAlign:'center'}}>Como puedo ayudarte?</Typography>
+                        <Typography variant='h5' gutterBottom style={{textAlign:'center'}}>¿Cómo puedo ayudarte?</Typography>
                     </Grid>
                     <Grid item xs={12} >
                         <TextField id="name" label="Nombre" variant="outlined"  fullWidth/>
