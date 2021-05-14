@@ -27,7 +27,7 @@ const Greeting = () => {
         <div className={classes.root}>
             <Container className={classes.container} maxWidth='sm'>
                 <Typography variant="h4" gutterBottom>Hola!</Typography >
-                <Typography className={classes.about} variant="body1" gutterBottom>Desarrollador FullStack</Typography>
+                <Typography className={classes.about} variant="body1" gutterBottom>Soy Desarrollador FullStack</Typography>
                 <Typography className={classes.about} variant="body1" gutterBottom>Construyendo mi primer app</Typography>
                 <br/>
                 <Typography className={classes.about} variant="body1" gutterBottom>Actualmente trabajo para TaTa S.A. como desarrollador fullstack ssr.</Typography>
