@@ -17,7 +17,7 @@ const ProjectsPreview = () => {
 
     const projects = useStaticQuery(graphql`
     query {
-        allDatoCmsPortfolio {
+        allDatoCmsPortfolio(filter: {id: {regex: "/-es/"}}) {
           nodes{
             titulo
             descripcion
