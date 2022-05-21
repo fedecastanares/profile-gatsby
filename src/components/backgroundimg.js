@@ -22,7 +22,7 @@ const ImagenFondo = (props) => {
             Tag={'section'} 
             fluid={image.file.childImageSharp.fluid}
             style={{backgroundColor: '#2b2b2b'}}>
-                <div style={{height: '82vh'}}>
+                <div style={{height: '82vh', background: "linear-gradient(360deg, rgb(34 37 40) 6%, rgba(16, 32, 201, 0) 77%)"}}>
                     {props.children}
                 </div>
         </BackgroundImagen>

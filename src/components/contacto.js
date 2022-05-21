@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     },
     container: {
         paddingTop: '5vh', 
-        paddingBottom: '8vh'
+        paddingBottom: '2vh'
     },
 }))
 

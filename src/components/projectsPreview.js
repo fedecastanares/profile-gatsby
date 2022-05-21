@@ -50,7 +50,7 @@ const ProjectsPreview = () => {
                                     <Img
                                     fluid={project.imagen.fluid}
                                     alt='imagen del proyecto'
-                                    style={{height: 'auto', width: '100%'}}
+                                    style={{height: 'auto', width: '100%', borderRadius: "0.25rem"}}
                                     />
                                     <Grid container justify='space-between' alignContent='center' alignItems='center' spacing={2} style={{paddingTop: '2vh'}}>
                                       <Grid item xs={8}>

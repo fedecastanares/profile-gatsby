@@ -11,10 +11,11 @@ const Filters = ({data, renderData, setRenderData}) => {
       });
 
       const scenarioFilter = (expectedValue = 'all') => {
+          var newData;
           if ( expectedValue === 'all') {
-            var newData = data;
+            newData = data;
           } else {
-            var newData = ([...data.filter(scenario => scenario.Proyecto === expectedValue)])
+            newData = ([...data.filter(scenario => scenario.Proyecto === expectedValue)])
           }
         if (!state.Creado){
             newData = [...newData.filter(value => value.Tipo !== "Creacion")];

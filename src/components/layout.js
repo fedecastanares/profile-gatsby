@@ -3,6 +3,7 @@ import Header from './header.js';
 import {Helmet} from 'react-helmet';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import useSeo from '../hooks/use-seo.js';
+import Footer from './footer.js';
 
 const Layout = (props) => {
 
@@ -46,6 +47,7 @@ const Layout = (props) => {
       <ThemeProvider theme={theme}>
         <Header/>
         {props.children}
+        <Footer />  
       </ThemeProvider>
     </>
    );
