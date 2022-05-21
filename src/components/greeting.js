@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.secondary.main
     },
     container: {
-        paddingTop: '15vh',
+        paddingTop: '1vh',
         paddingBottom: '5vh',
     },
     about: {
