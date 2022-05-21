@@ -9,7 +9,8 @@ const useStyles = makeStyles(theme => ({
     root: {
         backgroundColor: theme.palette.secondary.main,
         color: "#fff",
-        paddingBottom: "2rem"
+        paddingBottom: "1rem",
+        paddingTop: "2rem"
     },
     icon: {
         marginLeft: "1rem"

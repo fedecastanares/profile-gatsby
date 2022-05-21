@@ -9,8 +9,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.secondary.main
     },
     container: {
-        paddingTop: '5vh', 
-        paddingBottom: '2vh'
+        paddingTop: '5vh'
     },
 }))
 
